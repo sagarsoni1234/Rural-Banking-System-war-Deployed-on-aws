@@ -1,0 +1,204 @@
+body{
+    background-color: white;
+}
+#WIN{
+    width: 1000px;
+    height: 800px;
+    background-color: brown;
+    margin:auto;
+}
+/*UNIVERSAL SELECTOR*/
+.span-div{
+    align-self: center;
+    
+    float:left;
+    
+    padding-bottom: 10px;
+    font-size:30px;
+    text-shadow: 5px 5px 5px rgb(220, 27, 27);
+}
+#banklogo{
+    background-color: rgb(255, 247, 240);
+    width: 40px;
+    height: 40px;
+    border: 1px rgb(5, 85, 247) solid;
+    float: right;
+    margin: 0px 20px 0px 0px;
+    background-image: url(https://image.shutterstock.com/image-illustration/rupee-currency-golden-icon-3d-260nw-506966392.jpg);
+    background-size: contain;
+    border-radius: 50%;
+    transition: ease all 1s;
+}  
+#banklogo:hover{
+    cursor:alias;
+    transform:rotate(360deg) scale(1.4);
+    transition: ease all 1s;
+}
+#emblemlogo{
+    background-color: rgb(255, 247, 240);
+    width: 40px;
+    height: 40px;
+    border: 1px rgb(5, 85, 247) solid;
+    float: right;
+    margin: 0px 10px 0px 0px;
+    background-image: url(https://m.media-amazon.com/images/I/71ge1so4KtL._SL1200_.jpg);
+    background-size: contain;
+    border-radius: 50%;
+    transition: ease all 1s;
+}  
+#emblemlogo:hover{
+    cursor:alias;
+    transform:rotate(360deg) scale(1.4);
+    transition: ease all 1s;
+}
+#rbilogo{
+    background-color: rgb(255, 247, 240);
+    width: 40px;
+    height: 40px;
+    border: 1px rgb(5, 85, 247) solid;
+    float: right;
+    margin: 0px 20px 0px 10px;
+    background-image: url(https://blog.ipleaders.in/wp-content/uploads/2016/08/Reserve-Bank-of-India-RBI-Logo.jpg);
+    background-position: center;
+    
+    background-size: contain;
+    border-radius: 50%;
+    transition: ease all 1s;
+}
+#rbilogo:hover{
+    cursor:alias;
+    transform:rotate(360deg) scale(1.4);
+    transition: ease all 1s;
+}
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+}
+#title-div{
+    width: inherit;
+    height: 50px;
+    background-color: rgb(158, 220, 237);
+}
+#row2{
+    width: inherit;
+    height: 200px;
+    background-color: rgb(213, 204, 221);
+}
+
+#row3{
+    padding-left: 300px;
+    border-bottom: 1px solid rgb(214, 214, 214);
+    
+    padding-bottom: 55px;;
+    height: 50px;
+    background-color: white;
+}
+/*BUTTONS applied in a,input*/
+
+.bton{
+    margin-top: 6px;
+    text-transform: uppercase;
+    cursor:pointer;
+    text-align: center;
+    border-radius: 50px;
+    margin-right: 30px   ;
+    
+    font-weight:200;
+    float:left;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(90, 162, 195);
+    transition: ease all .5s;
+    border: 5px black;
+    box-shadow: 7px 0px 1px rgb(210, 43, 21);
+    
+}
+.bton:hover{
+    box-shadow: 7px 7px 5px rgb(210, 43, 21);
+    border: 5px red;
+    border-radius: 25px 25px 25px 25px ;
+    color: burlywood;
+    background-color: rgb(85, 88, 81);
+}
+.bton:active{
+    transform: translate(0px ,5px);
+    transition: ease all .5s;
+}
+/*SIDE MENU creation applied on ol and li tag*/
+#side-menu{
+    padding-top: 20px;
+    float:left;
+    height: 450px;
+    background-color: white;
+    padding-right: 10px;
+    overflow-y: scroll;
+}
+#side-menu::-webkit-scrollbar{
+    width:10px;
+    padding-top: 20px;
+}
+#side-menu::-webkit-scrollbar-thumb{
+    border-radius:5px 5px 5px 5px;
+    background-color: rgb(110, 103, 241);
+}
+#side-menu::-webkit-scrollbar-track{
+    padding-top: 20px;
+    background-color: rgb(245, 125, 125);
+    border-radius:5px 5px 5px 5px;
+}
+.olTAG{
+    list-style:none;
+    background-color: white;
+    padding: 2px;
+    text-align: center;
+}
+.liTAG{
+    font-size:large;
+    line-height: 40px;
+    border-bottom: 1px rgb(177, 119, 49) solid;
+    border-radius: 20px 20px 20px 20px;
+    height: 40px;
+    width: 400px;
+    background-color: rgb(163, 195, 216);
+    margin-bottom:  3px;
+}
+.liTAG:hover{
+    background-color: rgb(248, 163, 155);
+    color: black;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgb(248, 10, 10);
+}
+.liTAG:active{
+    transform: translate(0px ,5px);
+    transition: ease all .5s;
+}
+/*Starting design of web page starts here*/
+#AccountSummary{
+    height: 450px;
+    margin-left: 100px;
+    background-color: white;
+}
+.table{
+
+    padding-left: 50px;
+    padding-right: 40px;
+    margin-left: 500px;
+    padding-top: 80px;
+}
+.bottom{
+    color: rgb(255, 248, 248);
+    width:inherit;
+    height: 40px;
+    background-color: rgb(45, 41, 41);
+}
+.a{
+    text-decoration: none;
+    color: black;
+}
+
+td{
+	width:50px;
+	height:30px;
+	background-color:tomato;
+}

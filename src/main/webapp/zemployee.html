@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="js/jquery-1.8.2.min.js">
+    <title>Rural Banking Console</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="card">
+        <div class="card-body" style="background-color:tomato">
+         <h4><b>Rural Banking management Console.</b></h4>
+        </div>
+    </div>
+    <!-- alag page pe jayega SYSTEM -->
+    <h2>To check details of Customer</h2>
+    
+        <form action="employeeservlet2" method="post">
+            <div class="mb-3" style="width:800px;">
+              <label for="exampleInputEmail1" class="form-label">Enter Account Number:</label>
+              <input type="text" placeholder="10 digit account number:" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="customsearch">
+              <div id="emailHelp" class="form-text">Click here to see the details.</div>
+            
+            <button type="submit" class="bton">Submit</button>
+          </div>
+          <marquee bgcolor="tomato"> Sign up new customer.</marquee>
+          </form>
+          
+          <form action="employeeservlet" method="post">
+          <div class="input-group input-group-lg" style="width:800px;">
+            <span class="input-group-text" id="inputGroup-sizing-lg">Set Account Number</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" name=acc_no>
+          </div>
+          <br>
+          <div class="input-group input-group-lg" style="width:800px;" >
+            <span class="input-group-text" id="inputGroup-sizing-lg">Set Email</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" name=email>
+          </div>
+          <br>
+          <div class="input-group input-group-lg" style="width:800px;">
+            <span class="input-group-text" id="inputGroup-sizing-lg">Set Password</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" name=password>
+          </div>
+          <br>
+          
+          <div class="input-group" style="width:800px;" style="width:800px;">
+            <span class="input-group-text">First and last name</span>
+            <input type="text" aria-label="First name" class="form-control" name=firstname>
+            <input type="text" aria-label="Last name" class="form-control"  name=lastname>
+          </div>
+          <br>
+          <div class="input-group mb-3" style="width:800px;">
+            <span class="input-group-text">Rs.</span>
+            <span class="input-group-text">500.00</span>
+            <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" name="opening_amount">
+          </div>
+          <br>
+          <div class="input-group flex-nowrap" style="width:800px;">
+            <span class="input-group-text" id="addon-wrapping">Pan Number</span>
+            <input type="text" class="form-control" placeholder="pancard" aria-label="Username" aria-describedby="addon-wrapping" name="pancard">
+          </div>
+          <br>
+          <div class="input-group flex-nowrap" style="width:800px;">
+            <span class="input-group-text" id="addon-wrapping">Aadhar card</span>
+            <input type="text" class="form-control" placeholder="aadhar number" aria-label="Username" aria-describedby="addon-wrapping" name="aadharcard">
+          </div>
+          <br>
+          <div class="input-group flex-nowrap" style="width:800px;">
+            <span class="input-group-text" id="addon-wrapping">Mobile Number</span>
+            <input type="text" class="form-control" placeholder="+91 xxxxxxxxxx" aria-label="Username" aria-describedby="addon-wrapping" name="mobile">
+          </div>
+          <br>
+          <div class="input-group flex-nowrap" style="width:800px;">
+            <span class="input-group-text" id="addon-wrapping">address</span>
+            <input type="text" class="form-control" placeholder="local address" aria-label="Username" aria-describedby="addon-wrapping" name="address">
+          </div>
+          <br>
+          <div class="input-group input-group-lg" style="width:800px;">
+            <span class="input-group-text" id="inputGroup-sizing-lg">Verified by Employee (yes/no)</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" name="verification">
+          </div>
+          <br>
+          <button type=submit class="bton" value="submit">Create User</button>
+        </form>
+  </body>
+</html>
